@@ -1,1 +1,5 @@
-<p>approximations-post works!</p>
+<div *ngIf="approximation">
+    <h1>{{ approximation.title }}</h1>
+    <img *ngIf="approximation.imageUrl" [src]="approximation.imageUrl" alt="{{  approximation.title }}">
+    <p>{{ approximation.content }}</p>
+  </div>
