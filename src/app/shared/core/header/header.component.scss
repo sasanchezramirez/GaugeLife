@@ -10,8 +10,17 @@
 }
 
   .toolbar-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
     text-align: center;
+  }
+
+  .logo{
+    width: 45px;
+    height: 45px;
+    display: block;
   }
 
   .spacer {

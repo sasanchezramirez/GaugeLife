@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   imageUrls: string[] = [
-    'assets/pictures/pan1.jpg',
-    'assets/pictures/pan2.jpg',
-    'assets/pictures/pan3.jpg'
+    // 'assets/pictures/draw_1.jpg',
+    'assets/pictures/pan_1.jpg',
+    'assets/pictures/sea_1.jpg',
+    'assets/pictures/chaplin_1.jpg'
   ];
 }
