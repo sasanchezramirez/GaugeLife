@@ -7,32 +7,12 @@ body {
   padding: 0;
 }
 
-.main-toolbar {
-  background-color: #ffffff !important; /* Fondo blanco */
-  color: #000000 !important; /* Texto negro */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.toolbar-title {
-  flex-grow: 1;
-  text-align: center;
-}
 
-.spacer {
-  flex: 1;
-}
 
-.desktop-menu {
-  display: flex;
-  gap: 15px;
-}
 
-.mobile-menu-button {
-  display: none;
-}
+
+
 
 .close-menu-button {
   position: absolute;
