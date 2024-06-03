@@ -16,10 +16,11 @@
 
 
     <mat-drawer #drawer class="drawer top-drawer" mode="over">
+      <button mat-icon-button class="close-menu-button" (click)="drawer.toggle()">
+        <mat-icon>close</mat-icon>
+      </button>
       <div class="drawer-content">
-        <button mat-icon-button class="close-menu-button" (click)="drawer.toggle()">
-          <mat-icon>close</mat-icon>
-        </button>
+
         <mat-nav-list>
           <a mat-list-item routerLink="/">Home</a>
           <a mat-list-item routerLink="/implications">Implications</a>
