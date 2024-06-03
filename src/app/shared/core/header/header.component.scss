@@ -25,6 +25,104 @@
     display: none;
   }
   
+  .close-menu-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .drawer-container {
+    height: 100%;
+  }
+  
+  .drawer {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100%; /* Ocupa todo el alto de la pantalla */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+  }
+  
+  .mat-drawer-opened {
+    transform: translateY(0) !important;
+  }
+  
+  .drawer-content {
+    width: 100%;
+    text-align: center; /* Centrar el texto */
+    position: relative; /* Necesario para el posicionamiento absoluto del botón de cerrar */
+  }
+  
+  .drawer-content mat-nav-list a {
+    font-size: 1.5rem; /* Tamaño de texto más grande */
+    margin: 15px 0; /* Espaciado entre los elementos */
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  /* Estilos para la sección hero */
+  .hero {
+    text-align: center;
+    margin: 20px 0;
+  
+    .hero-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      justify-items: center;
+  
+      .hero-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+      margin: 20px 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+  
+  /* Estilos para las secciones */
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    .section {
+      width: 45%;
+      margin: 20px 0;
+      text-align: center;
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+  }
+  
   @media (max-width: 768px) {
     .desktop-menu {
       display: none;

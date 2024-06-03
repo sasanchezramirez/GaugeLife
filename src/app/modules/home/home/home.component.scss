@@ -26,7 +26,32 @@
     }
   
     p {
-      font-size: 1.2rem;
+      font-size: 45px;
       font-family: 'Montserrat', sans-serif;
+    }
+  }
+
+  .sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    .section {
+      width: 45%;
+      margin: 20px 0;
+      text-align: center;
+  
+      h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        font-family: 'Montserrat-light', sans-serif;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+
+      }
     }
   }
