@@ -34,6 +34,7 @@ export class ApproximationService {
         const title = this.extractTitle(content);
         const date = this.extractDate(content);
         const imageUrl = this.extractImageUrl(content);
+        const abstract = this.extractAbstract(content);
         const bodyContent = this.extractContent(content);
 
         return {
@@ -41,6 +42,7 @@ export class ApproximationService {
           title,
           date,
           imageUrl,
+          abstract,
           content: bodyContent
         };
       })
@@ -59,6 +61,11 @@ export class ApproximationService {
 
   private extractImageUrl(content: string): string {
     const match = content.match(/!\[.*\]\((.*)\)/);
+    return match ? match[1] : '';
+  }
+
+  private extractAbstract(content: string): string {
+    const match = content.match(/Resumen:\s(.+)/);
     return match ? match[1] : '';
   }
 

@@ -4,6 +4,7 @@ import { ApproximationsListComponent } from './approximations-list/approximation
 import { ApproximationsPostComponent } from './approximations-post/approximations-post.component';
 import { ApproximationsRoutingModule } from './approximations-routing.module';
 import { ApproximationCardComponent } from 'src/app/shared/utils/approximation-card/approximation-card.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ApproximationCardComponent } from 'src/app/shared/utils/approximation-c
   imports: [
     CommonModule,
     ApproximationsRoutingModule,
-    ApproximationCardComponent
+    ApproximationCardComponent,
+    MatGridListModule
   ]
 })
 export class ApproximationsModule { }

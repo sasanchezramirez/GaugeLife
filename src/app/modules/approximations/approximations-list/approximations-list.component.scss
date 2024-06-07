@@ -1,0 +1,14 @@
+@import 'src/app/shared/styles/mixins';
+
+.container {
+    @include flex-center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+    app-approximation-card {
+        width: 45%;
+        margin: 20px 0;
+        text-align: center;
+    }
+}

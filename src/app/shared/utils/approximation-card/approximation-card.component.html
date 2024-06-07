@@ -1,6 +1,6 @@
-<div>
-    <h2>{{ title }}</h2>
+<div class="card">
     <img *ngIf="imageUrl" [src]="imageUrl" alt="{{  title }}">
-    <p>{{ content }}</p> 
-    <a [routerLink]="['/approximations/post', id]">Read more</a>
+    <h2>{{ title }}</h2>
+    <p>{{ abstract }}</p>
+    <a [routerLink]="['/approximations/post', id]"><p>Read More <mat-icon class="icon">arrow_forward</mat-icon></p> </a>
 </div>

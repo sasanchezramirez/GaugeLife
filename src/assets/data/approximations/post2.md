@@ -1,6 +1,6 @@
 # Titulo del primer POST
 
-![Imagen Destacada](assets/pictures/chaplin_1.jpg)
+![Imagen Destacada](assets/pictures/sea_1.jpg)
 
 Fecha: 2024-06-03
 
