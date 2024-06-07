@@ -1,0 +1,8 @@
+<div class="container"
+*ngFor="let post of approximations">
+    <app-approximation-card [title]="post.title" 
+    [imageUrl]="post.imageUrl" 
+    [abstract]="post.abstract"
+    [id]="post.id">
+    </app-approximation-card>
+</div>      

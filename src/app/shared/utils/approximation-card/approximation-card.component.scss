@@ -1,0 +1,47 @@
+@import 'src/app/shared/styles/mixins';
+@import 'src/assets/styles/themes';
+
+.card {
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+
+
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+
+    p { 
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+
+    }
+
+    a { 
+        font-size: 1.1rem;
+        color: $theme-light-text-color;
+        text-decoration: none;
+            
+        .icon {
+            font-size: 1.3rem;
+            height: 1rem;
+        }
+
+    }
+}
