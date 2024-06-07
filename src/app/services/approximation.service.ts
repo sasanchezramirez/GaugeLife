@@ -30,18 +30,42 @@ export class ApproximationService {
 
   private getApproximation(file: string, id: number): Observable<Approximation> {
     return this.http.get(this.postsUrl + file, { responseType: 'text' }).pipe(
-      map(content => ({
-        id,
-        title: this.extractTitle(content),
-        content,
-        date: new Date()
-      }))
+      map(content => {
+        const title = this.extractTitle(content);
+        const date = this.extractDate(content);
+        const imageUrl = this.extractImageUrl(content);
+        const bodyContent = this.extractContent(content);
+
+        return {
+          id,
+          title,
+          date,
+          imageUrl,
+          content: bodyContent
+        };
+      })
     );
   }
 
   private extractTitle(content: string): string {
     const match = content.match(/#\s(.+)/);
     return match ? match[1] : 'Untitled';
+  }
+
+  private extractDate(content: string): Date {
+    const match = content.match(/Fecha:\s([0-9-]+)/);
+    return match ? new Date(match[1]) : new Date();
+  }
+
+  private extractImageUrl(content: string): string {
+    const match = content.match(/!\[.*\]\((.*)\)/);
+    return match ? match[1] : '';
+  }
+
+  private extractContent(content: string): string {
+    // Assuming the content starts after the first '---'
+    const splitContent = content.split('---');
+    return splitContent.length > 1 ? splitContent[1].trim() : content;
   }
 
   getApproximationById(id: number): Observable<Approximation> {

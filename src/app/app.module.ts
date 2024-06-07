@@ -7,6 +7,7 @@ import { HeaderComponent } from 'src/app/shared/core/header/header.component';
 
 import { AppComponent } from './app.component';
 import { ImageContainerComponent } from './shared/utils/image-container/image-container.component';
+import { ApproximationCardComponent } from './shared/utils/approximation-card/approximation-card.component';
 
 @NgModule({
   declarations: [

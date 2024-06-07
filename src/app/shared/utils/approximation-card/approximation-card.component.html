@@ -1,0 +1,6 @@
+<div>
+    <h2>{{ title }}</h2>
+    <img *ngIf="imageUrl" [src]="imageUrl" alt="{{  title }}">
+    <p>{{ content }}</p> 
+    <a [routerLink]="['/approximations/post', id]">Read more</a>
+</div>

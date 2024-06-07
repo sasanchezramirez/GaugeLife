@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApproximationService } from 'src/app/services/approximation.service';
 import { Approximation } from '../models/approximation.model';
+import { ApproximationCardComponent } from 'src/app/shared/utils/approximation-card/approximation-card.component';
 
 @Component({
   selector: 'app-approximations-list',

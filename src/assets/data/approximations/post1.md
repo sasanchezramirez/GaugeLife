@@ -1,6 +1,6 @@
-# Título del Post
+# Titulo del primer POST
 
-![Imagen Destacada](ruta/a/la/imagen.jpg)
+![Imagen Destacada](assets/pictures/chaplin_1.jpg)
 
 Fecha: 2024-06-03
 
@@ -27,7 +27,6 @@ Puedes añadir subsecciones para organizar mejor tu contenido.
 1. Elemento numerado 1
 2. Elemento numerado 2
 
-![Otra Imagen](ruta/a/otra/imagen.jpg)
 
 ## Sección 2: Subtítulo
 
