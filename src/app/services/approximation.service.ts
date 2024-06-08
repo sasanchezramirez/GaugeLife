@@ -70,7 +70,6 @@ export class ApproximationService {
   }
 
   private extractContent(content: string): string {
-    // Assuming the content starts after the first '---'
     const splitContent = content.split('---');
     return splitContent.length > 1 ? splitContent[1].trim() : content;
   }
